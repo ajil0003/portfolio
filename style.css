@@ -1,0 +1,71 @@
+/*  Set #474747 as primary color for bootstrap */
+:root {
+    --primary-color: #474747;
+    --secondary-color: #EBCFB1;
+    --success-color: #your-success-color;
+    --info-color: #718E92;
+    --warning-color: #your-warning-color;
+    --danger-color: #your-danger-color;
+    --light-color: #e0e0e0;
+    --dark-color: #your-dark-color;
+  }
+  
+  /* Override Bootstrap classes using custom variables */
+  /* Example for primary color */
+  .btn-primary {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+  }
+  .bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6{
+      color: var(--secondary-color) !important;
+  }
+.btn-primary:hover {
+  background-color: var(--info-color); 
+  color: var(--light-color);           
+  border-color: var(--info-color);   
+}
+
+  .bg-secondary {
+    background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+  }
+  
+  .bg-info {
+    background-color: var(--info-color) !important;
+  color: var(--light-color) !important;
+  }
+  .bg-info a{
+      color: var(--light-color) !important;
+  }
+  
+  body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  main{
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+  }
+  .contact-section{
+      flex-grow: 1;
+  }
+  
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    background-color: var(--primary-color);
+    
+  }
+
+  
